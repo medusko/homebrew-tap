@@ -6,33 +6,33 @@ Official Homebrew tap for [Medusko](https://github.com/medusko) macOS utilities 
 
 ## Available Casks
 
-| App | Description | Install Command |
+| App | Description | One-Line Install Command |
 | :--- | :--- | :--- |
-| **Keyboardy** | Zero-step auxiliary Google Image & GIF search and auto-paste keyboard utility | `brew install --cask keyboardy` |
-| **Lagatron** | Subprocess ICMP & TCP network latency floating HUD | `brew install --cask lagatron` |
+| **Keyboardy** | Zero-step auxiliary Google Image & GIF search and auto-paste keyboard utility | `brew install --cask medusko/tap/keyboardy` |
+| **Lagatron** | Subprocess ICMP & TCP network latency floating HUD | `brew install --cask medusko/tap/lagatron` |
 
 ---
 
 ## Installation
 
-### 1. Add the Tap
+### Option 1: Direct Install (One Step)
+No prior tapping required:
 ```bash
-brew tap medusko/tap
-```
-
-### 2. Install Applications
-```bash
-# Install Keyboardy
-brew install --cask keyboardy
-
 # Install Lagatron
-brew install --cask lagatron
+brew install --cask medusko/tap/lagatron
+
+# Install Keyboardy
+brew install --cask medusko/tap/keyboardy
 ```
 
-Or install directly in one step:
+### Option 2: Add Tap First, Then Install
 ```bash
-brew install --cask medusko/tap/keyboardy
-brew install --cask medusko/tap/lagatron
+# 1. Add the tap
+brew tap medusko/tap
+
+# 2. Install
+brew install --cask lagatron
+brew install --cask keyboardy
 ```
 
 ---
